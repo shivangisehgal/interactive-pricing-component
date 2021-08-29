@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="row">
+      <div class="heading">
+        <h1>Simple, traffic-based pricing</h1>
+        <p class="subheading mt-2 mb-4">
+          Sign-up for our 30-day trial.
+          No credit card required.
+        </p>
+      </div>
+    </div>
+    <div class="container col-10 col-md-6">
+      <div class="row mt-3 views-price-container">
+        <p class="views col mt-3"><span id="slider_val">100K</span> PAGEVIEWS</p>
+        <p class="price col mt-3"><span class="h2">$</span><span class="amount h2">16.00</span><span class="per-month"> /month</span></p>
+      </div>
+      <input type="range" min="1" max="5" step="1" id="slider_range" class="slider my-4" value="3">
+      <div class="bill_toggle mt-4 pb-3">
+        <span class="monthly">Monthly Billing</span>
+        <input type="checkbox" id="switch"><label for="switch"></label>
+        <span class="yearly_bill">Yearly Billing
+          <span class="discount text-center ml-1 px-2 pb-1">-25%</span>
+        </span>
+      </div>
+      <hr class="w-100">
+      <div class="footer d-md-flex justify-content-md-around d-sm-block pt-4 pb-4">
+        <ul class="features text-left pl-0">
+          <li class="points">Unlimited Websites</li>
+          <li class="points">100% Data Ownership</li>
+          <li class="points">Email Reports</;>
+        </ul>
+        <button class="btn px-4 py-2" type="button">Start my trial</button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a>.
+    Coded by <a href="#">Shivangi Sehgal</a>.
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
